@@ -424,9 +424,9 @@ class Viacoin(Coin):
     WIF_BYTE = bytes.fromhex("c7")
     GENESIS_HASH = ('4e9b54001f9976049830128ec0331515'
                     'eaabe35a70970d79971da1539a400ba1')
-    TX_COUNT = 53452596
-    TX_COUNT_HEIGHT = 3474247
-    TX_PER_BLOCK = 60
+    TX_COUNT = 113638
+    TX_COUNT_HEIGHT = 3473674
+    TX_PER_BLOCK = 30
     RPC_PORT = 5222
     REORG_LIMIT = 5000
 
