@@ -425,10 +425,10 @@ class Viacoin(Coin):
                     'eaabe35a70970d79971da1539a400ba1')
 
     TX_COUNT = 
-    TX_COUNT_HEIGHT = 
+    TX_COUNT_HEIGHT = 3474247
     TX_PER_BLOCK = 
     RPC_PORT = 5222
-    REORG_LIMIT = 
+    REORG_LIMIT = 5000
 
 
 # Source: namecoin.org
