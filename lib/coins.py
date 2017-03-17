@@ -419,7 +419,7 @@ class Viacoin(Coin):
     NET = "mainnet"
     XPUB_VERBYTES = bytes.fromhex("0488B21E")
     XPRV_VERBYTES = bytes.fromhex("0488ADE4")
-    P2KH_VERBYTE = bytes.fromhex("47")commits
+    P2KH_VERBYTE = bytes.fromhex("47")
     P2SH_VERBYTE = bytes.fromhex("21")
     WIF_BYTE = bytes.fromhex("c7")
     GENESIS_HASH = ('4e9b54001f9976049830128ec0331515'
@@ -441,6 +441,13 @@ class ViacoinTestnet(Viacoin):
     WIF_BYTE = bytes.fromhex("ff")
     GENESIS_HASH = ('00000007199508e34a9ff81e6ec0c477'
                     'a4cccff2a4767a8eee39c11db367b008')
+
+class ViacoinTestnetSegWit(ViacoinTestnet):
+    NET = "testnet-segwit"
+
+    @classmethod
+    def deserializer(cls):
+        return DeserializerSegWit
 
 
 # Source: namecoin.org
