@@ -412,23 +412,35 @@ class LitecoinTestnet(Litecoin):
     GENESIS_HASH = ('f5ae71e26c74beacc88382716aced69c'
                     'ddf3dffff24f384e1808905e0188f68f')
 
+
 class Viacoin(Coin):
     NAME="Viacoin"
     SHORTNAME = "VIA"
     NET = "mainnet"
     XPUB_VERBYTES = bytes.fromhex("0488B21E")
     XPRV_VERBYTES = bytes.fromhex("0488ADE4")
-    P2KH_VERBYTE = bytes.fromhex("47")
+    P2KH_VERBYTE = bytes.fromhex("47")commits
     P2SH_VERBYTE = bytes.fromhex("21")
     WIF_BYTE = bytes.fromhex("c7")
     GENESIS_HASH = ('4e9b54001f9976049830128ec0331515'
                     'eaabe35a70970d79971da1539a400ba1')
-
     TX_COUNT = 
     TX_COUNT_HEIGHT = 3474247
     TX_PER_BLOCK = 
     RPC_PORT = 5222
     REORG_LIMIT = 5000
+
+
+class ViacoinTestnet(Viacoin):
+    SHORTNAME = "TVI"
+    NET = "testnet"
+    XPUB_VERBYTES = bytes.fromhex("043587CF")
+    XPRV_VERBYTES = bytes.fromhex("04358394")
+    P2PKH_VERBYTE = bytes.fromhex("7f")
+    P2SH_VERBYTE = bytes.fromhex("c4")
+    WIF_BYTE = bytes.fromhex("ff")
+    GENESIS_HASH = ('00000007199508e34a9ff81e6ec0c477'
+                    'a4cccff2a4767a8eee39c11db367b008')
 
 
 # Source: namecoin.org
