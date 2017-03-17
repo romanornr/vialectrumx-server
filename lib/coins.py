@@ -413,7 +413,7 @@ class LitecoinTestnet(Litecoin):
                     'ddf3dffff24f384e1808905e0188f68f')
 
 
-class Viacoin(Coin):
+class Viacoin(CoinAuxPow):
     NAME="Viacoin"
     SHORTNAME = "VIA"
     NET = "mainnet"
