@@ -481,8 +481,16 @@ class Viacoin(CoinAuxPow):
     TX_COUNT = 113638
     TX_COUNT_HEIGHT = 3473674
     TX_PER_BLOCK = 30
+    IRC_PREFIX = "E_"
+    IRC_CHANNEL="#vialectrum"
     RPC_PORT = 5222
     REORG_LIMIT = 5000
+    PEERS = [
+        'vialectrum.bitops.me s t',
+        'server.vialectrum.org s t',
+        'vialectrum.viacoin.net s t',
+        'vialectrum.cryptoservices.net s t'
+    ]
 
 
 class ViacoinTestnet(Viacoin):
