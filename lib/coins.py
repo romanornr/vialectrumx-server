@@ -489,7 +489,7 @@ class Viacoin(CoinAuxPow):
         'vialectrum.bitops.me s t',
         'server.vialectrum.org s t',
         'vialectrum.viacoin.net s t',
-        'vialectrum.cryptoservices.net s t',
+        'viax1.bitops.me s t',
     ]
 
 
