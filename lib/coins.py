@@ -489,7 +489,7 @@ class Viacoin(CoinAuxPow):
         'vialectrum.bitops.me s t',
         'server.vialectrum.org s t',
         'vialectrum.viacoin.net s t',
-        'vialectrum.cryptoservices.net s t'
+        'vialectrum.cryptoservices.net s t',
     ]
 
 
@@ -503,6 +503,12 @@ class ViacoinTestnet(Viacoin):
     WIF_BYTE = bytes.fromhex("ff")
     GENESIS_HASH = ('00000007199508e34a9ff81e6ec0c477'
                     'a4cccff2a4767a8eee39c11db367b008')
+    RPC_PORT = 25222
+    REORG_LIMIT = 2500
+    PEER_DEFAULT_PORTS = {'t': '51001', 's': '51002'}
+    PEERS = [
+        'electrum-ltc.bysh.me s t',
+    ]
 
 class ViacoinTestnetSegWit(ViacoinTestnet):
     NET = "testnet-segwit"
