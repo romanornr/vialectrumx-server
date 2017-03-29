@@ -4,10 +4,12 @@
     :target: https://coveralls.io/github/kyuupichan/electrumx
 
 ===============================================
-ElectrumX - Reimplementation of electrum-server
+VialectrumX - Reimplementation of Vialectrum-server
 ===============================================
 
-For a future network with bigger blocks.
+This is the implementation for Viacoin for ElectrumX
+Making it possible for everyone to run a VialectrumX server.
+It can even be run on a Raspberry PI 3
 
   :Licence: MIT
   :Language: Python (>= 3.5.3)
@@ -46,35 +48,6 @@ Features
   for any reason.
 - Peer discovery protocol removes need for IRC
 - Coin abstraction makes compatible altcoin and testnet support easy.
-
-Motivation
-==========
-
-Mainly for privacy reasons, I have long wanted to run my own Electrum
-server, but I struggled to set it up or get it to work on my
-DragonFlyBSD system and lost interest for over a year.
-
-In September 2016 I heard that electrum-server databases were getting
-large (35-45GB when gzipped), and it would take several weeks to sync
-from Genesis (and was sufficiently painful that no one seems to have
-done it for about a year).  This made me curious about improvements
-and after taking a look at the code I decided to try a different
-approach.
-
-I prefer Python3 over Python2, and the fact that Electrum is stuck on
-Python2 has been frustrating for a while.  It's easier to change the
-server to Python3 than the client, so I decided to write my effort in
-Python3.
-
-It also seemed like a good opportunity to learn about asyncio, a
-wonderful and powerful feature introduced in Python 3.4.
-Incidentally, asyncio would also make a much better way to implement
-the Electrum client.
-
-Finally though no fan of most altcoins I wanted to write a codebase
-that could easily be reused for those alts that are reasonably
-compatible with Bitcoin.  Such an abstraction is also useful for
-testnets.
 
 Implementation
 ==============
@@ -211,10 +184,7 @@ documentation updates.
 * add FairCoin (thokon00)
 
 
-**Neil Booth**  kyuupichan@gmail.com  https://github.com/kyuupichan
-
-1BWwXJH3q6PRsizBkSGm2Uw4Sz1urZ5sCj
-
+Original ElectrumX implementation  https://github.com/kyuupichan
 
 .. _#83: https://github.com/kyuupichan/electrumx/issues/83
 .. _#100: https://github.com/kyuupichan/electrumx/issues/100
