@@ -473,7 +473,7 @@ class Viacoin(CoinAuxPow):
     NET = "mainnet"
     XPUB_VERBYTES = bytes.fromhex("0488B21E")
     XPRV_VERBYTES = bytes.fromhex("0488ADE4")
-    P2KH_VERBYTE = bytes.fromhex("47")
+    P2PKH_VERBYTE = bytes.fromhex("47")
     P2SH_VERBYTE = bytes.fromhex("21")
     WIF_BYTE = bytes.fromhex("c7")
     GENESIS_HASH = ('4e9b54001f9976049830128ec0331515'
@@ -489,7 +489,7 @@ class Viacoin(CoinAuxPow):
         'vialectrum.bitops.me s t',
         'server.vialectrum.org s t',
         'vialectrum.viacoin.net s t',
-        'vialectrum.cryptoservices.net s t',
+        'viax1.bitops.me s t',
     ]
 
 
