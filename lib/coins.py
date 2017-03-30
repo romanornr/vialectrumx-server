@@ -507,7 +507,7 @@ class ViacoinTestnet(Viacoin):
     REORG_LIMIT = 2500
     PEER_DEFAULT_PORTS = {'t': '51001', 's': '51002'}
     PEERS = [
-        'electrum-ltc.bysh.me s t',
+        'vialectrum.bysh.me s t',
     ]
 
 class ViacoinTestnetSegWit(ViacoinTestnet):
